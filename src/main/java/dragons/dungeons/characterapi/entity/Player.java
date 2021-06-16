@@ -26,7 +26,7 @@ public class Player {
     private List<Class> classes;
 
     @Column(nullable = false)
-    private int level;
+    private String level;
 
     @OneToMany(fetch = FetchType.LAZY, cascade = {CascadeType.PERSIST, CascadeType.MERGE, CascadeType.REMOVE})
     private List<Race> races;
@@ -38,6 +38,6 @@ public class Player {
     private String alignment;
 
     @Column(nullable = false)
-    private int experience;
+    private String experience;
 
 }

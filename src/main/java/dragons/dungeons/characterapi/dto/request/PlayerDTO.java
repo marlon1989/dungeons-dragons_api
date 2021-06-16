@@ -30,7 +30,7 @@ public class PlayerDTO {
 
     @NotEmpty
     @Size(min = 1, max = 3)
-    private int level;
+    private String level;
 
     @Valid
     @NotEmpty
@@ -46,5 +46,5 @@ public class PlayerDTO {
 
     @NotEmpty
     @Size(min = 1, max = 3)
-    private int experience;
+    private String experience;
 }
